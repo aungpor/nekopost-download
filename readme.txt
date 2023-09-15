@@ -1,4 +1,5 @@
 node ./service/downloadImage.js
+node ./service/downloadImage-v2.js
 node ./service/testUrl.js
 
 การใช้งานคือการเอา object จาก api แบบ JSON มาใส่ไว้ใน nekopost-test.json

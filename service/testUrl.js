@@ -26,7 +26,7 @@ fs.readFile(jsonFilePath, 'utf8', (error, data) => {
     const pageCount = jsonData.pageItem
 
     for (const pageCountObj of pageCount) {
-        const imageUrl = `https://www.osemocphoto.com/collectManga/${projectId}/${chapterId}/${pageCountObj.pageName}`
+        const imageUrl = `https://www.osemocphoto.com/collectManga/${projectId}/${chapterId}/${pageCountObj.fileName}`
         console.log(pageCountObj.pageNo);
         console.log(imageUrl);
     }

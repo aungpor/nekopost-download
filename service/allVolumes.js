@@ -36,7 +36,6 @@ fs.readdir(rootDirectory, (err, files) => {
         let fileCounter = 1;
 
         fs.readdirSync(folderPath).forEach((file) => {
-            if (path.extname(file).toLowerCase() === '.jpg') {
                 const fileChapter = file.replace(oldName, '');
 
                 const oldFilePath = path.join(folderPath, file);
@@ -47,7 +46,7 @@ fs.readdir(rootDirectory, (err, files) => {
                 fs.renameSync(oldFilePath, newFilePath);
 
                 fileCounter++;
-            }
+            
         });
 
         console.log('เปลี่ยนชื่อไฟล์ jpg เรียบร้อยแล้ว');
